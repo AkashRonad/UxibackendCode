@@ -1,0 +1,26 @@
+POST http://localhost:5566/signin
+Content-Type: application/json
+
+{
+    "username": "arun",
+  "password": "Ar9Ar"
+}
+
+###
+
+GET http://localhost:5566/user/me
+Authorization: Bearer eyJhbciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFydW4iLCJwYXNzd29yZCI6IjMxNjUyZmRkNmI3ZjVhZTllOTk1YWNiZDVmMmYxMWEwIiwiZm5hbWUiOiJBcnVuIiwibG5hbWUiOiJSb25hZCIsImlhdCI6MTYxOTI4MjQ1Nn0.ZEfsOBXu7zTyeS3hV0Zi2gFlBfyXWrtwGkDp2QGkXHE
+
+
+###
+POST http://localhost:5566/Signup
+Content-Type: application/json
+
+{
+  "username": "arun",
+  "password": "Ar9Ar",
+  "fname": "Arun",
+  "lname": "Ronad"
+}
+
+
