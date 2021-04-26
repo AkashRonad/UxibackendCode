@@ -9,6 +9,7 @@ var hostname=process.env.YOUR_HOST || '0.0.0.0'||"localhost";
 const app =express();
 app.use(cors());
 app.options('*',cors());
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 app.use('/',routes);
